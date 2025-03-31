@@ -61,7 +61,7 @@ function Education() {
     GlobalApi.UpdateResumeDetail(params.resumeId,data).then(resp=>{
       console.log(resp);
       setLoading(false)
-      toast('Details updated !')
+      toast('Details updated!')
     },(error)=>{
       setLoading(false);
       toast('Server Error, Please try again!')
