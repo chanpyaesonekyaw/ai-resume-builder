@@ -12,12 +12,13 @@ import { useParams } from 'react-router-dom'
 import { toast } from 'sonner'
 
 function ThemeColor() {
-    const colors=[
-        "#FF5733", "#33FF57", "#3357FF", "#FF33A1", "#A133FF",
-        "#33FFA1", "#FF7133", "#71FF33", "#7133FF", "#FF3371",
-        "#33FF71", "#3371FF", "#A1FF33", "#33A1FF", "#FF5733",
-        "#5733FF", "#33FF5A", "#5A33FF", "#FF335A", "#335AFF"
-    ]
+  const colors = [
+    "#1ABC9C", "#2ECC71", "#3498DB", "#9B59B6", "#34495E",
+    "#F1C40F", "#E67E22", "#E74C3C", "#16A085", "#27AE60",
+    "#2980B9", "#8E44AD", "#2C3E50", "#F39C12", "#D35400",
+    "#C0392B", "#BDC3C7", "#7F8C8D", "#95A5A6", "#ECF0F1"
+  ];
+
 
     const {resumeInfo,setResumeInfo}=useContext(ResumeInfoContext);
     const [selectedColor,setSelectedColor]=useState();
@@ -34,7 +35,7 @@ function ThemeColor() {
             }
         }
         GlobalApi.UpdateResumeDetail(resumeId,data).then(resp=>{
-            console.log(resp);
+            // console.log(resp);
             toast('Theme Color Updated')
         })
     }

@@ -22,9 +22,7 @@ function EducationalPreview({resumeInfo}) {
             <h2 className='text-xs flex justify-between'>{education?.degree} in {education?.major}
             <span>{education?.startDate} - {education?.endDate}</span>
             </h2>
-            <p className='text-xs my-2'>
-                {education?.description}
-            </p>
+            <div className='text-xs my-2' dangerouslySetInnerHTML={{__html:education?.description}} />
         </div>
     ))}
 

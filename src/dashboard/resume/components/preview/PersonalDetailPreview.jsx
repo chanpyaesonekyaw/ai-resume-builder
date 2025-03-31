@@ -16,7 +16,7 @@ function PersonalDetailPreview({resumeInfo}) {
             color:resumeInfo?.themeColor
         }}>{resumeInfo?.address}</h2>
 
-        <div className='flex justify-between'>
+        <div className='flex justify-between mt-2'>
             <h2 className='font-normal text-xs'
              style={{
                 color:resumeInfo?.themeColor

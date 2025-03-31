@@ -17,13 +17,29 @@ function ViewResume() {
     },[])
     const GetResumeInfo=()=>{
         GlobalApi.GetResumeById(resumeId).then(resp=>{
-            console.log(resp.data.data);
+            // console.log(resp.data.data);
             setResumeInfo(resp.data.data);
         })
     }
 
-    const HandleDownload=()=>{
+    const HandleDownload = () => {
+        const printContent = document.getElementById('print-area');
+        const originalContents = document.body.innerHTML;
+        
+        // Replace body content with only the print area
+        document.body.innerHTML = printContent.innerHTML;
+        
+        // Print
         window.print();
+        
+        // Restore original content
+        document.body.innerHTML = originalContents;
+        
+        // Reattach event listeners
+        const printArea = document.getElementById('print-area');
+        if (printArea) {
+            printArea.innerHTML = printContent.innerHTML;
+        }
     }
 
   return (
