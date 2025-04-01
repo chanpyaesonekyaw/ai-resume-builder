@@ -91,4 +91,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Clerk](https://clerk.com/) for authentication
 - [Google AI](https://ai.google.dev/) for content generation
 - [Tailwind CSS](https://tailwindcss.com/) for styling
-- [Radix UI](https://www.radix-ui.com/) for accessible components
+- [Shadcn UI](https://ui.shadcn.com/) for accessible components
