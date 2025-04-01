@@ -41,7 +41,7 @@ A modern web application that helps users create professional resumes with the a
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ai-resume-builder.git
+git clone https://github.com/chanpyaesonekyaw/ai-resume-builder.git
 cd ai-resume-builder
 ```
 
@@ -52,7 +52,7 @@ npm install
 yarn install
 ```
 
-3. Create a `.env` file in the root directory and add your environment variables:
+3. Create a `.env.local` file in the root directory and add your environment variables:
 ```env
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_api_key
 VITE_STRAPI_API_KEY=your_strapi_backend_api_key
