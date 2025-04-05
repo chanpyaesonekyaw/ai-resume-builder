@@ -55,7 +55,6 @@ yarn install
 3. Create a `.env.local` file in the root directory and add your environment variables:
 ```env
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_api_key
-VITE_STRAPI_API_KEY=your_strapi_backend_api_key
 VITE_GOOGLE_AI_API_KEY=your_google_ai_key
 VITE_API_BASE_URL=your_backend_api_base_url
 ```
