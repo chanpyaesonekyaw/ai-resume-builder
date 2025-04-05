@@ -42,7 +42,7 @@ A modern web application that helps users create professional resumes with the a
 1. Clone the repository:
 ```bash
 git clone https://github.com/chanpyaesonekyaw/ai-resume-builder.git
-cd ai-resume-builder
+cd ai-resume-builder/frontend
 ```
 
 2. Install dependencies:
