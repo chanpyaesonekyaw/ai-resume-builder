@@ -23,7 +23,7 @@ function Dashboard() {
     })
   }
   return (
-    <div className='p-10 md:px-20 lg:px-32'>
+    <div className='container mx-auto p-10 px-4'>
       <h2 className='font-bold text-3xl'>My Resume</h2>
       <p>Start Creating AI resume to your next Job role</p>
       <div className='grid grid-cols-2 
