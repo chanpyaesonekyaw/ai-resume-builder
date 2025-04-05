@@ -6,22 +6,25 @@ import { UserButton, useUser } from '@clerk/clerk-react'
 function Header() {
     const { user, isSignedIn } = useUser();
     return (
-        <div className='p-3 px-5 flex justify-between shadow-md'>
-             <Link to={'/dashboard'}>
-            <img src='/logo.svg' className='cursor-pointer' width={100} height={100} />
-            </Link>
-            {isSignedIn ?
-                <div className='flex gap-2 items-center'>
+        <div className='shadow-md'>
+            <div className="container mx-auto p-3 px-4">
+                <div className="flex justify-between">
                     <Link to={'/dashboard'}>
-                        <Button variant="outline">Dashboard</Button>
+                    <img src='/logo.svg' className='cursor-pointer' width={100} height={100} />
                     </Link>
-                    <UserButton />
-                </div> :
-                <Link to={'/auth/sign-in'}>
-                    <Button>Get Started</Button>
-                </Link>
-            }
-
+                    {isSignedIn ?
+                        <div className='flex gap-2 items-center'>
+                            <Link to={'/dashboard'}>
+                                <Button variant="outline">Dashboard</Button>
+                            </Link>
+                            <UserButton />
+                        </div> :
+                        <Link to={'/auth/sign-in'}>
+                            <Button>Get Started</Button>
+                        </Link>
+                    }
+                </div>
+            </div>
         </div>
     )
 }

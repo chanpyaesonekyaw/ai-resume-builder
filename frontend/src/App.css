@@ -43,3 +43,9 @@
 .bg-popover {
   background-color: #ffffff;
 }
+.bg-primary {
+  background-color: #18181b;
+}
+.text-primary-foreground {
+  color: #fafafa;
+}
